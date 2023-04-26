@@ -1,0 +1,24 @@
+{
+  "name": "qa-automation-test",
+  "version": "1.0.0",
+  "description": "qa automation test project for relishiq by luis morales",
+  "main": "index.js",
+  "scripts": {
+    "test": "tst"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuisRMorales/qa-automation-test.git"
+  },
+  "keywords": [
+    "qa",
+    "automation",
+    "relish"
+  ],
+  "author": "Luis R Morales",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/LuisRMorales/qa-automation-test/issues"
+  },
+  "homepage": "https://github.com/LuisRMorales/qa-automation-test#readme"
+}

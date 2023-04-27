@@ -52,8 +52,6 @@ class ShoppingCart {
                     return 0;
             }
         };
-
-
     }
 }
 

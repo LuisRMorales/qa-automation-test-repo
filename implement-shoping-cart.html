@@ -1,0 +1,20 @@
+<script type="text/javascript" src="/src/shoping-cart.js"></script>
+
+<script>
+    /*
+        Usage example of the ShoppingCart object and its elements
+    */
+
+    // Create a new ShoppingCart object and add four items to it
+    let cart = new ShoppingCart();
+    cart.addItem({ id: "apple", price: 1, quantity: 1 });
+    cart.addItem({ id: "orange", price: 1, quantity: 1 });
+    cart.addItem({ id: "banana", price: 1, quantity: 2 });
+    // Print the ShoppingCart total price to the console
+    console.log({ totalPrice: cart.calculateTotalPrice() });
+    // Add the fifth element
+    cart.addItem({ id: "grape", price: 1, quantity: 1 });
+    // Print the ShoppingCart total price to the console
+    console.log({ totalPrice: cart.calculateTotalPrice() });
+
+</script>

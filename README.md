@@ -38,3 +38,6 @@ The earlier defects are detected the less impact they have (costs, delivery time
 
 ## KPI 3 - Test Efficiency
 Amount of resources (time and testers) spent on testing. Testing could be a bottle neck to deliver, test eficciendy is an indicator that we are capable to deliver fast and with confidence on the quality of the product.  
+
+# Part 6
+Github action is avilable on push event to master branch. See "Actions" tab to see all excecutions.

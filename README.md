@@ -1,17 +1,22 @@
 # qa-automation-test-repo
-# prerequisite restore the following frameworks
-node.js 
-mocha
-nyc
+# prerequisite install node.js and restore all dependencies in package.json or you can install the following dependencies
+npm install --save-dev nyc mocha
+npm install selenium-webdriver webdriver-manager npm 
+npm install -g selenium-side-runner
 
 #to excecute the tests you should run npm test in the console, it will return the results of the tests and the report of code coverage.
-#example
 npm test 
 
+#to excecute the tests you should run npm test in the console, it will return the results of the tests and the report of code coverage in html.
+npx nyc report --reporter=html
+
+#to run the test of selenium webdriver you should run
+npm run test-selenium
+
+# output example for unit test and code coverage report
 > qa-automation-test@1.0.0 test
 > nyc mocha
 
-Debugger attached.
 Debugger attached.
 
 
@@ -58,6 +63,3 @@ File             | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
 All files        |     100 |      100 |     100 |     100 | 
  shoping-cart.js |     100 |      100 |     100 |     100 | 
 -----------------|---------|----------|---------|---------|-------------------
-
-#to excecute the tests you should run npm test in the console, it will return the results of the tests and the report of code coverage in html.
-npx nyc report --reporter=html

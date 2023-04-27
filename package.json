@@ -4,7 +4,7 @@
   "description": "qa automation test project for relishiq by luis morales",
   "main": "index.js",
   "scripts": {
-    "test": "nyc mocha",
+    "test": "nyc mocha ./test/shoping-cart-test.js",
     "test-selenium": "mocha ./test/*.spec.js"
   },
   "repository": {

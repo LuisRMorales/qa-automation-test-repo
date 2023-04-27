@@ -8,23 +8,23 @@ jobs:
   build-and-test:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Set up Node.js
-      uses: actions/setup-node@v2-beta
-      with:
-        node-version: '14.x'
-    - name: Install Dependencies
-      run: npm install
-    - name: Run Unit Tests
-      run: npm run test
-      env:
-        CI: true
-    - name: Generate Coverage Report
-      run: npx nyc report --reporter=text-lcov > coverage.lcov && npx codecov
-      env:
-        CI: true
-    - name: Upload Coverage Report
-      uses: actions/upload-artifact@v2
-      with:
-        name: coverage
-        path: coverage
+      - uses: actions/checkout@v2
+      - name: Set up Node.js
+        uses: actions/setup-node@v2-beta
+        with:
+          node-version: "14.x"
+      - name: Install Dependencies
+        run: npm install
+      - name: Run Unit Tests
+        run: npm run test
+        env:
+          CI: true
+      - name: Generate Coverage Report
+        run: npx nyc report --reporter=text-lcov > coverage.lcov && npx codecov
+        env:
+          CI: true
+      - name: Upload Coverage Report
+        uses: actions/upload-artifact@v2
+        with:
+          name: coverage
+          path: coverage
